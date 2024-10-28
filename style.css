@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+:root {
+    --primary: #fcfcfc;
+    --secondary: #c6a6f2;
+    --ternary: #af82ed;
+}
+body {
+    background-color: var(--secondary);
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.1s ease;
+}
+h1 {
+    color: var(--primary);
+}
+/* Scrollbar  */
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 15px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--primary);
+}
+.container {
+    margin: 5px 10px 5px 10px;
+    border: 1px solid var(--ternary);
+    padding: 30px 0px 20px 0px;
+    border-radius: 30px;
+    min-width: 10%;
+    max-width: 98%;
+    background-color: var(--primary);
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+.opcty {
+    opacity: 0.5;
+}
+.addTask {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    gap: 20px;
+    padding: 10px;
+}
+.addTask input {
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    border: 1px solid var(--ternary);
+    outline: var(--ternary);
+}
+.errOutline {
+    outline: 1px solid red;
+}
+#add {
+    padding: 5px 10px 5px 10px;
+    border-radius: 30px;
+    border: 1px solid var(--ternary);
+    background-color: var(--secondary);
+}
+.actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#checkbox {
+    transform: scale(2);
+}
+.taskList {
+    width: 100%;
+    padding: 0px 5px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    max-height: 260px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+#removeTask {
+    text-align: right;
+}
+.task .goal {
+    word-wrap: break-word;
+    /* Allows long words to break and wrap */
+    word-break: break-word;
+    /* Break the word and wrap to the next line if necessary */
+    overflow-wrap: break-word;
+    /* Browsers try to prevent overflow and wrap phrases to the next line */
+    white-space: normal;
+    /* Allows the text to wrap normally */
+    padding: 5px;
+    /* Padding for better readability */
+    max-width: 100%;
+    /* Ensures it won't exceed the container width */
+    background-color: var(--secondary);
+    padding: 5px 10px 5px 3px;
+    border-radius: 0px 30px 30px 0px;
+    border: 1px solid var(--ternary);
+    border-left: none;
+}
